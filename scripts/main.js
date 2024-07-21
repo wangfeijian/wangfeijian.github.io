@@ -1,11 +1,11 @@
 let myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
+myHeading.textContent = '嗖嗖之箭';
 
 let myImage = document.querySelector('img');
 
 myImage.onclick = () =>{
     let mySrc = myImage.getAttribute('src');
-    let targetSrc = mySrc == 'images/firefox.png' ? 'images/firefox1.png': 'images/firefox.png';
+    let targetSrc = mySrc == 'images/first.jpg' ? 'images/second.jpg': 'images/first.jpg';
     myImage.setAttribute('src', targetSrc);
 }
 
@@ -21,12 +21,12 @@ function setUserName(){
     }
 }
 
-if(!localStorage.getItem('name')) {
-    setUserName();
-} else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Mozilla Cool, ' + storedName;
-}
+// if(!localStorage.getItem('name')) {
+//     setUserName();
+// } else {
+//     let storedName = localStorage.getItem('name');
+//     myHeading.textContent = 'Mozilla Cool, ' + storedName;
+// }
 
 myButton.onclick = () =>{
     setUserName();
