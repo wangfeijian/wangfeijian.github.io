@@ -11,15 +11,15 @@ myImage.onclick = () =>{
 
 let myButton = document.querySelector('button');
 
-function setUserName(){
-    let myName = prompt('请输入你的名字。');
-    if(!myName){
-        setUserName();
-    } else {
-        localStorage.setItem('name', myName);
-        myHeading.textContent = 'Mozilla Cool, ' + myName;
-    }
-}
+// function setUserName(){
+//     let myName = prompt('请输入你的名字。');
+//     if(!myName){
+//         setUserName();
+//     } else {
+//         localStorage.setItem('name', myName);
+//         myHeading.textContent = 'Mozilla Cool, ' + myName;
+//     }
+// }
 
 // if(!localStorage.getItem('name')) {
 //     setUserName();
@@ -28,6 +28,6 @@ function setUserName(){
 //     myHeading.textContent = 'Mozilla Cool, ' + storedName;
 // }
 
-myButton.onclick = () =>{
-    setUserName();
-}
+// myButton.onclick = () =>{
+//     setUserName();
+// }
